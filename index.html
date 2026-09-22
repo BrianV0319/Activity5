@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanueva Brian Joseph L. Creatives</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cbd8cf;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #636262;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+        }
+
+        .brand-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .brand-logo {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid #e0be6c;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: #525050;
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #e0be6c;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #d1ded6;
+            width: 100%;
+            max-width: 750px;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .view-section {
+            display: none;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #38423b;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 15px;
+            font-style: italic;
+            color: #5e6d63;
+            margin-bottom: 25px;
+        }
+
+        .image-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .circular-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #d1b15a;
+            object-fit: cover;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4a574f;
+            max-width: 620px;
+            margin: 0 auto 25px auto;
+        }
+
+        .description p {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #555555;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333333;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #aaaaaa;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="brand-title">
+            <img
+                src="z:\BRIAN VILLANUEVA\VILLANUEVA LOGO.png"
+                alt="Logo"
+                class="brand-logo"
+            >
+
+            <span>VILLANUEVA BRIAN JOSEPH L. CREATIVES</span>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" class="nav-link active"
+                       onclick="switchTab(event, 'home')">HOME</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link"
+                       onclick="switchTab(event, 'about')">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="#gallery" class="nav-link"
+                       onclick="switchTab(event, 'gallery')">GALLERY</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link"
+                       onclick="switchTab(event, 'contact')">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="card">
+
+            <!-- HOME -->
+            <section id="home" class="view-section active">
+
+                <h1>EXPERIENCE THE CREATIVE</h1>
+
+                <p class="tagline">
+                    Crafting beauty through intentional design.
+                </p>
+
+                <!-- EXACTLY 3 IDENTICAL CIRCULAR IMAGES -->
+                <div class="image-group">
+
+                    <img
+                        src="z:\BRIAN VILLANUEVA\VILLANUEVA LOGO.png"
+                        alt="Creator Profile"
+                        class="circular-img"
+                    >
+
+                    <img
+                        src="z:\BRIAN VILLANUEVA\VILLANUEVA LOGO.png"
+                        alt="Creator Profile"
+                        class="circular-img"
+                    >
+
+                    <img
+                        src="z:\BRIAN VILLANUEVA\VILLANUEVA LOGO.png"
+                        alt="Creator Profile"
+                        class="circular-img"
+                    >
+
+                </div>
+
+                <div class="description">
+                    <p>
+                        Step into a world where every detail is a masterpiece.
+                        Villanueva Brian Joseph L. Creatives offers a unique
+                        blend of modern innovation and timeless elegance.
+                    </p>
+                </div>
+
+                <button class="btn" onclick="switchTab(null, 'about')">
+                    LEARN MORE
+                </button>
+
+            </section>
+
+
+            <!-- ABOUT -->
+            <section id="about" class="view-section">
+
+                <h1>ABOUT THE COLLECTION</h1>
+
+                <div class="description">
+
+                    <p>
+                        Villanueva Brian Joseph L. Creatives is a creative
+                        collection focused on expressing ideas through
+                        design, imagination, and innovation.
+                    </p>
+
+                    <p>
+                        Every creation is made with attention to detail
+                        and a goal of creating meaningful and visually
+                        appealing designs.
+                    </p>
+
+                    <p>
+                        We continue to explore new ideas and techniques
+                        while keeping creativity and originality at the
+                        center of every project.
+                    </p>
+
+                </div>
+
+                <button class="btn" onclick="switchTab(null, 'contact')">
+                    GET IN TOUCH
+                </button>
+
+            </section>
+
+
+            <!-- GALLERY -->
+            <section id="gallery" class="view-section">
+
+                <h1>OUR SHOWCASE</h1>
+
+                <p class="tagline">
+                    Explore our creative works and ideas.
+                </p>
+
+                <div class="description">
+
+                    <p>
+                        Our gallery represents creativity, imagination,
+                        and the effort put into every project.
+                    </p>
+
+                    <p>
+                        More creative works and designs can be added
+                        to this section in the future.
+                    </p>
+
+                </div>
+
+                <button class="btn" onclick="switchTab(null, 'home')">
+                    BACK TO HOME
+                </button>
+
+            </section>
+
+
+            <!-- CONTACT -->
+            <section id="contact" class="view-section">
+
+                <h1>CONTACT US</h1>
+
+                <p class="tagline">
+                    We would love to connect with you.
+                </p>
+
+                <div class="description">
+
+                    <p>
+                        Email:
+                        <strong>contact@villanuevacreatives.com</strong>
+                    </p>
+
+                    <p>
+                        Location: Philippines
+                    </p>
+
+                    <p>
+                        Follow us on social media for creative updates
+                        and future project releases.
+                    </p>
+
+                </div>
+
+                <button class="btn" onclick="switchTab(null, 'home')">
+                    RETURN HOME
+                </button>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 VILLANUEVA BRIAN JOSEPH L. CREATIVES
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function switchTab(event, targetId) {
+
+            if (event) {
+                event.preventDefault();
+            }
+
+            // Hide all sections
+            const sections = document.querySelectorAll('.view-section');
+
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            // Remove active navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Show selected section
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Highlight selected navigation
+            navLinks.forEach(function(link) {
+
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('active');
+                }
+
+            });
+        }
+
+    </script>
+
+</body>
+</html>
